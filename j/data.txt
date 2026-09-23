@@ -1,0 +1,74 @@
+id: 1
+property_type: Hostel
+tier: Premium
+name: Sunrise Student Residency
+universities: Galgotias University, Sharda University, Bennett University, VIT VELLORE
+owner_name: Property Manager
+phone: +919060930128
+distances: Galgotias University = 0.8, Sharda University = 1.5, Bennett University = 3.2, VIT VELLORE = 2.0
+gender: Boys
+address: Knowledge Park III, Greater Noida
+starting_price: 4500
+single_price: 8500
+double_price: 6000
+triple_price: 4500
+addons_available: all
+mess_cost: 2500
+laundry_cost: 800
+ac_cost: 1200
+custom_addons: Personal Geyser = 500, Campus Pick & Drop = 1500, Room Cleaning = 400
+facilities: Free High-Speed WiFi, 24/7 Security, Power Backup, Gym, Study Room
+custom_facilities: Induction Stove Access, Gaming Zone, Library
+booking_form_link: https://forms.gle/p3t3Q7s9PB7xm9Gt9
+thumbnail: images/sunrise-thumb.jpg
+room_images: images/sunrise-room1.jpg, images/sunrise-room2.jpg
+---
+id: 2
+property_type: Hostel
+tier: Standard
+name: Greenwood Girls PG
+universities: VIT Vellore, Thiruvalluvar University
+owner_name: Property Manager
+phone: +919060930128
+distances: VIT Vellore = 1.2, Thiruvalluvar University = 2.8
+gender: Girls
+address: Near Katpadi Junction, Vellore
+starting_price: 5000
+single_price: 9500
+double_price: 6800
+triple_price: 5000
+addons_available: mess, laundry
+mess_cost: 3000
+laundry_cost: 700
+ac_cost: 0
+custom_addons: Air Cooler = 600, Evening Snacks = 1000
+facilities: Biometric Entry, WiFi, Mess Food, RO Water, CCTV
+custom_facilities: Female Security Guard, Attached Balcony
+booking_form_link: https://forms.gle/p3t3Q7s9PB7xm9Gt9
+thumbnail: images/greenwood-thumb.jpg
+room_images: images/greenwood-room1.jpg
+---
+id: 3
+property_type: Flat
+tier: Luxury
+name: Navicore Executive Flat
+universities: BIT Mesra, Ranchi University, St. Xavier's College
+owner_name: Property Manager
+phone: +919060930128
+distances: BIT Mesra = 0.5, Ranchi University = 4.1, St. Xavier's College = 3.5
+gender: Co-ed
+address: Lalpur, Ranchi
+starting_price: 5500
+single_price: 10500
+double_price: 7200
+triple_price: 5500
+addons_available: none
+mess_cost: 0
+laundry_cost: 0
+ac_cost: 0
+custom_addons: none
+facilities: Air Conditioned, High-Speed Internet, Daily Cleaning, Housekeeping
+custom_facilities: EV Charging Station, Terrace Garden, Bar
+booking_form_link: https://forms.gle/p3t3Q7s9PB7xm9Gt9
+thumbnail: images/navicore-thumb.jpg
+room_images: images/navicore-room1.jpg
