@@ -298,9 +298,14 @@
     let hostelListings = [];
     let servedUniversities = [];
 
-    // Helper: Find relevant distance for a property based on active search query
+    // Helper: Find relevant distance and associated university for a property
     function getRelevantDistance(item, query) {
-      if (!query) return { dist: item.primaryDistance, university: item.primaryUniversity };
+      if (!query) {
+        return { 
+          dist: item.primaryDistance, 
+          university: item.primaryUniversity || (item.universities.length > 0 ? item.universities[0] : "Campus") 
+        };
+      }
 
       const matchedUni = item.universities.find(u => u.toLowerCase().includes(query));
       if (matchedUni && item.distancesMap[matchedUni] !== undefined) {
@@ -309,7 +314,7 @@
 
       // Default to minimum distance available across served universities
       let minDist = item.primaryDistance;
-      let minUni = item.primaryUniversity;
+      let minUni = item.primaryUniversity || (item.universities.length > 0 ? item.universities[0] : "Campus");
       Object.entries(item.distancesMap).forEach(([uni, dist]) => {
         if (dist < minDist) {
           minDist = dist;
@@ -368,7 +373,7 @@
             distancesMap[fallbackUni] = parseFloat(obj.distance) || 0;
           }
 
-          const primaryUni = universitiesList[0] || "";
+          const primaryUni = universitiesList[0] || "Campus";
           const primaryDist = distancesMap[primaryUni] !== undefined ? distancesMap[primaryUni] : (parseFloat(obj.distance) || 0);
 
           // Parse standard allowed add-ons
@@ -549,7 +554,7 @@
 
       container.innerHTML = list.map(item => {
         const { dist, university } = getRelevantDistance(item, query);
-        const distLabel = query && university ? `${dist} km from ${university}` : `${dist} km from campus`;
+        const distLabel = `${dist} km from ${university}`;
 
         return `
         <div class="glass-card rounded-2xl overflow-hidden hover:border-slate-500/50 transition-all duration-300 flex flex-col justify-between">
