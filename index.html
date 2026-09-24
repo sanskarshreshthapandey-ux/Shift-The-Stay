@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Shift The Stay- Student Accommodation Search</title>
+  <title>Shift The Stay - Student Accommodation Search</title>
   <link rel="icon" type="image/jpeg" href="images/logo.jpg" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -160,7 +160,7 @@
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
       <div class="flex items-center gap-3 cursor-pointer" onclick="resetFilters()">
         <img src="images/logo.jpg" alt="Shift The Stay Logo" class="w-9 h-9 object-cover rounded-xl border border-slate-300 dark:border-slate-700 shadow-sm">
-        <span class="font-extrabold text-xl tracking-tight text-slate-800 dark:text-white">SHIFT <span class="text-teal-700 dark:text-teal-400">THE  </span class="text-slate-800 dark:text-white">STAY</span></span>
+        <span class="font-extrabold text-xl tracking-tight text-slate-800 dark:text-white">SHIFT <span class="text-teal-700 dark:text-teal-400">THE <span class="text-slate-800 dark:text-white">STAY</span></span></span>
       </div>
 
       <div class="flex items-center gap-3">
@@ -189,7 +189,7 @@
     
     <!-- SEARCH BAR AREA -->
     <section class="w-full max-w-3xl mx-auto text-center relative z-30 space-y-3">
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Your City Changes, Your Comfort Shouldn't</h1>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight">Your City Changes, Comfort Shouldn't</h1>
       <p class="text-xs sm:text-sm text-slate-600 dark:text-slate-400 max-w-xl mx-auto">Discover top-rated hostels and flats near your university with transparent pricing and verified amenities.</p>
       
       <div class="relative mt-6">
@@ -222,8 +222,8 @@
     <!-- CONTENT LAYOUT GRID -->
     <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 items-start">
       
-      <!-- SIDEBAR FILTERS -->
-      <aside class="glass-sidebar p-6 rounded-2xl space-y-6 sticky top-24">
+      <!-- SIDEBAR FILTERS (Fixed sticky behavior for mobile) -->
+      <aside class="glass-sidebar p-6 rounded-2xl space-y-6 lg:sticky lg:top-24 relative z-10">
         <div class="flex items-center justify-between border-b border-slate-200 dark:border-slate-800 pb-3">
           <h2 class="font-bold text-slate-900 dark:text-white text-base">Filter Properties</h2>
           <button onclick="resetFilters()" class="text-[11px] text-teal-700 dark:text-teal-400 hover:underline font-semibold transition">
